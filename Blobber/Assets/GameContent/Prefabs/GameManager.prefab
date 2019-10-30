@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1779226311411441241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1779226311411441243}
+  - component: {fileID: 1779226311411441240}
+  - component: {fileID: 1779226311411441242}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1779226311411441243
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779226311411441241}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1779226311411441240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779226311411441241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d39bb4c9d247c743a2cd2e07a0b8e47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player1: {fileID: 2397672069562949934, guid: d28c34cfa1e2d9f448be91bf55c1f301,
+    type: 3}
+  _player2: {fileID: 2797714540826902398, guid: ff84541c55e52cd4eb37792fb46c6e7d,
+    type: 3}
+  _scoreP1: {fileID: 6864492156182871513, guid: 4745075466052c44c858185c7d38c14e,
+    type: 3}
+  _scoreP2: {fileID: 6750985546542373005, guid: fa316025509f5c94e8ee87edd19aeddd,
+    type: 3}
+--- !u!114 &1779226311411441242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779226311411441241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0ee4405ffbf524990735899a9b5c39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pools:
+  - tag: Player1
+    prefab: {fileID: 2397672069562949935, guid: d28c34cfa1e2d9f448be91bf55c1f301,
+      type: 3}
+    size: 1
+  - tag: Player2
+    prefab: {fileID: 2797714540826902397, guid: ff84541c55e52cd4eb37792fb46c6e7d,
+      type: 3}
+    size: 1

@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: e1e8e68cb7d857c49ab450ddf33f1014
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Radcliffe Display
+  fontNames:
+  - Radcliffe Display
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 34eb5cd026a31e9419c2d8d832a722e9, type: 3}
+  - {fileID: 12800000, guid: 67770771299d5434e8eadc085fcbba50, type: 3}
+  - {fileID: 12800000, guid: 8434fa4bbc068894b8aae8e339dd4d44, type: 3}
+  - {fileID: 12800000, guid: 695e58acb4c31a04d994abf1bfb2a170, type: 3}
+  - {fileID: 12800000, guid: 887885bc83be8594bb6beb5c9026d4d0, type: 3}
+  - {fileID: 12800000, guid: 24ddb6ecf2e449b448cc09985e602520, type: 3}
+  - {fileID: 12800000, guid: 359e65aeac001d844a0b1366dce3cb10, type: 3}
+  - {fileID: 12800000, guid: 9402668fcc621de4d951fcadaa652568, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

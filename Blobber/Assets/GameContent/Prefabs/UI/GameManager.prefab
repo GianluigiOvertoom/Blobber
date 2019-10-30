@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9189209454314499264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9189209454314499266}
+  - component: {fileID: 9189209454314499271}
+  - component: {fileID: 9189209454314499267}
+  - component: {fileID: 9189209454314499268}
+  - component: {fileID: 9189209454314499269}
+  - component: {fileID: 9189209454314499272}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9189209454314499266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9189209454314499264}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9189209454314499271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9189209454314499264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d89a60f2fb299b4888be9e1c048d21f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _p1Color: {r: 0.024414659, g: 1, b: 0, a: 1}
+  _p2Color: {r: 1, g: 0, b: 0.78124094, a: 1}
+  _player1: {fileID: 0}
+  _player2: {fileID: 0}
+  _p1CanMove: 0
+  _p2CanMove: 0
+  _p1CanChangeDirection: 0
+  _p2CanChangeDirection: 0
+  _p1SplashParticle: {fileID: 0}
+  _specialEffectBehaviourP1: {fileID: 0}
+  _p1Trail: {fileID: 0}
+  _p2SplashParticle: {fileID: 0}
+  _specialEffectBehaviourP2: {fileID: 0}
+  _p2Trail: {fileID: 0}
+--- !u!114 &9189209454314499267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9189209454314499264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0ee4405ffbf524990735899a9b5c39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pools:
+  - tag: GreenTrail
+    prefab: {fileID: 5796215256276366779, guid: bb62610c0f14d1148b7408e5a1bdd566,
+      type: 3}
+    size: 20
+  - tag: GreenAirTrail
+    prefab: {fileID: 0}
+    size: 15
+  - tag: PurpleTrail
+    prefab: {fileID: 8873597406581948243, guid: 24b6196014207e34683edfbbac0ba64d,
+      type: 3}
+    size: 20
+  - tag: PurpleAirTrail
+    prefab: {fileID: 0}
+    size: 3
+--- !u!114 &9189209454314499268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9189209454314499264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dc790986785adf4db9c8895157ccac0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sounds:
+  - _name: Move
+    _clip: {fileID: 8300000, guid: c828ae0082656d44c896e95cd5891a1b, type: 3}
+    _volume: 0.419
+    _pitch: 0.44
+    _loop: 0
+    _source: {fileID: 0}
+  - _name: Jump
+    _clip: {fileID: 8300000, guid: d043f7dd02b2b3141babdb4d31cf8d07, type: 3}
+    _volume: 1
+    _pitch: 2
+    _loop: 0
+    _source: {fileID: 0}
+  - _name: Land
+    _clip: {fileID: 8300000, guid: dc907feb91d4f634aa9bcc4ca2581076, type: 3}
+    _volume: 1
+    _pitch: 2.5
+    _loop: 0
+    _source: {fileID: 0}
+  - _name: Hit
+    _clip: {fileID: 8300000, guid: d0b9b4d5509f5bd478a757f30e7e9ebd, type: 3}
+    _volume: 1
+    _pitch: 1
+    _loop: 0
+    _source: {fileID: 0}
+--- !u!114 &9189209454314499269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9189209454314499264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90188ef5aa5bdd64280502073fafe1da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9189209454314499272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9189209454314499264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81929813d20ffed4989ca4f4ec4b6042, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gamePaused: 0
+  _pauseMenuUI: {fileID: 0}
+  _MainMenu: {fileID: 0}
+  _startMenu: {fileID: 0}
+  _timerMenu: {fileID: 0}
+  _player1ReadyText: {fileID: 0}
+  _player1NotReadyText: {fileID: 0}
+  _player2ReadyText: {fileID: 0}
+  _player2NotReadyText: {fileID: 0}
+  _inGameUI: {fileID: 0}
+  _TimerText: {fileID: 0}
+  _player1Ready: 0
+  _player2Ready: 0
